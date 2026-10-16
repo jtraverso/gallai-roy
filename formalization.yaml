@@ -48,6 +48,15 @@ sources:
     note: "Independent discovery of the same theorem; no DOI."
     license: "unknown"
     author_endorsement: "n/a"
+  - title: "Determination of minimal coloring of vertices of a graph by means of Boolean powers of the incidence matrix"
+    authors:
+      - "L. M. Vitaver"
+    type: "paper"
+    location: "Doklady Akademii Nauk SSSR 147 (1962), 758–759"
+    relationship: "formalizes"
+    note: "The earliest of the four independent proofs of the theorem; no DOI."
+    license: "unknown"
+    author_endorsement: "n/a"
 
 status:
   scope: >-
