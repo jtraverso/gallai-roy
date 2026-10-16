@@ -42,7 +42,7 @@ def IsOrientation (G : SimpleGraph V) (o : V → V → Prop) : Prop :=
 
 /-- `f` is a directed path of `o` with `m` vertices. -/
 def IsDirectedPath (o : V → V → Prop) {m : ℕ} (f : Fin m → V) : Prop :=
-  Function.Injective f ∧ ∀ (i : ℕ) (h : i + 1 < m), o (f ⟨i, by omega⟩) (f ⟨i + 1, h⟩)
+  Function.Injective f ∧ ∀ (i : ℕ) (h : i + 1 < m), o (f ⟨i, Nat.lt_of_succ_lt h⟩) (f ⟨i + 1, h⟩)
 
 /-- **Gallai–Hasse–Roy–Vitaver.** If an orientation of a finite graph has no directed path on more
 than `k` vertices, the graph is `k`-colourable. -/
